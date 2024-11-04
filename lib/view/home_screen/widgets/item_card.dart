@@ -1,5 +1,6 @@
 import 'package:custom_rating_bar/custom_rating_bar.dart';
 import 'package:ecommerce_clone_july/utils/color_constants.dart';
+import 'package:ecommerce_clone_july/utils/image_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,11 +18,7 @@ class CustomItemCard extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(4),
-            child: Image.network(
-                fit: BoxFit.cover,
-                height: 124,
-                width: 170,
-                "https://images.pexels.com/photos/29041769/pexels-photo-29041769/free-photo-of-charming-sign-pointing-to-happiness-in-ibiza.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+            child: Image.asset(ImageConstants.GIRLIMG)
           ),
           SizedBox(height: 8),
           Text(
